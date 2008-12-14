@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appcelerator version="1.0" xmlns="http://www.appcelerator.org/config">
+    <servicebroker poll="false" marshaller="application/json">@{rootPath}servicebroker</servicebroker>
+    <upload>@{rootPath}upload</upload>
+    <download>@{rootPath}download</download>
+    <proxy>@{rootPath}proxy</proxy>
+    <sessionid>hindsightapp_session_id</sessionid>
+    <language>python</language>
+    <service>appengine</service>
+    <aid>137dd880-ac04-012b-9e3f-0016cbca73b9</aid>
+    <sid></sid>
+</appcelerator>

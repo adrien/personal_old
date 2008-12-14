@@ -1,0 +1,4 @@
+--- 
+:count: 1812
+:cmdline: create:project ./ hindsightapp appengine --home="/Users/adrien/.appcelerator" --system="/Library/Appcelerator"
+:time: 2008-12-14 11:55:50.513215 +00:00
