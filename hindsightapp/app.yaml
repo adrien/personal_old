@@ -9,6 +9,8 @@ handlers:
   script: launch/servicebroker.py
 - url: /proxy.*
   script: launch/proxy.py
+- url: /test.*
+  script: gaeunit.py
 - url: /
   static_files: public/index.html
   upload: public/index.html

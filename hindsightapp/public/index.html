@@ -19,37 +19,27 @@
 </head>
 <body style="visibility:hidden" on="l:app.compiled then visible">
     
-    <div style="font-family:Tahoma,Arial,Helvetica;font-size:24px;color:#222;margin:10px;">
-        <a href="http://www.appcelerator.org" title="Visit the Appcelerator Developer Network">
-            <img src="images/logo.png" alt="Appcelerator Logo" align="left" border="0"/>
-        </a>
-        <div style="margin-top:50px;margin-left:100px;float:left;line-height:60px;">
-            <div>Congratulations! You've installed the Appcelerator&trade; RIA Platform.</div>
-            <div><strong>Now go forth and build apps.</strong></div>
-            <div style="margin-top:100px;font-size:20px;line-height:30px">
-                <div>Some resources that will be helpful:</div>
-                <div>
-                    <ul>
-                        <li><a style="color:#ae2917;" href="servicetester.html">Appcelerator Service Tester Tool</a></li>
-                        <li><a style="color:#ae2917;" href="http://www.appcelerator.org">Appcelerator Developer Network</a></li>
-                        <li><a style="color:#ae2917;" href="http://doc.appcelerator.org">Appcelerator Reference Documentation</a></li>
-                        <li><a style="color:#ae2917;" href="http://unittest.appcelerator.org">Appcelerator Web Unit Tests</a></li>
-                        <li><a style="color:#ae2917;" href="http://www.appcelerant.com">Appcelerant - the Appcelerator Developer Blog</a></li>
-                        <li><a style="color:#ae2917;" href="http://www.appcelerator.com">Appcelerator Professional Support</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div style="margin-top:110px;font-size:12px;line-height:12px;color:#777;">
-                <div>
-                    <a style="color:#777;" 
-                    href="http://www.appcelerator.org">Appcelerator</a> 
-                    is Copyright &copy; 2007-2008 by <a href="http://www.appcelerator.com" style="color:#777;">Appcelerator, Inc.</a> 
-                    and is licensed under the <a href="http://license.appcelerator.org" style="color:#777;">Apache License 2.0</a></a>.
-                </div>
-                <div>Appcelerator is a trademark of Appcelerator, Inc.</div>
-            </div>
-        </div>
-    </div>
+<h1>Hello Appcelerator!</h1> 
+ 
+<!-- 
+ This is a basic form with a single input field. 
+ The “on” attributes of the basic HTML elements 
+ are syntactical elements of Appcelerator’s Web 
+ Expression Language 
+-->  
+<form on="enter then click[id=submit]"> 
+ <label>Enter A Message:</label><br/> 
+ <input id="message" type="text" fieldset="messageData"/> 
+ <input id="submit" type="button" fieldset="messageData" value="Say" 
+  on="click then r:app.test.message.request"/> 
+</form> 
+   
+<br/> 
+   
+<span style="display:none"  
+ on="r:app.test.message.response then  
+  value[message] and show and effect[Highlight]"> 
+</span> 
 
 </body>
 </html>

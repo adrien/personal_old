@@ -1,0 +1,20 @@
+OVERVIEW
+========
+
+This repository will be used as a test-bed for Appcelerator[APC] and Google's App Engine[GAE].
+
+[APC]: http://appcelerator.org/
+[GAE]: http://code.google.com/appengine/
+
+I will also be investigating the use of GAEUnit[GAEU] and TestMonkey[TM] for unit testing these two platforms.
+
+[GAEU] http://code.google.com/p/gaeunit/
+[TM] http://github.com/jhaynie/testmonkey/tree/master/
+
+OBJECTIVES
+----------
+
+1. Teach myself to use both Google App Engine and Appcelerator
+2. Develop a simple tool for tracking my expenses
+3. Gain experience versioning code using Git
+4. Apply proven agile development techniques, including test-driven development and continuous integration
